@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170808200550) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "ahjs", force: :cascade do |t|
     t.string "Name"
     t.string "State__c"
